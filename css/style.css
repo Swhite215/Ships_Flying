@@ -72,8 +72,8 @@ html {
   letter-spacing: 3px;
   height: 80px;
   background-color: transparent;
-  color: white;
   border: none;
+  color: white;
   margin-bottom: 2%;
 }
 
@@ -130,4 +130,31 @@ canvas{
 .ship {
 	width: 300px;
 	z-index: 7;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .grid {
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    position: absolute;
+    z-index: 3;
+    width: 90%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "ship_section image"
+      "ship_section information"
+      "ship_section button";
+    grid-row-gap: 0;
+  }
+
+  #particles-js {
+    height: 90%;
+  }
+
+
 }

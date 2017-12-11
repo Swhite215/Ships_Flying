@@ -61,9 +61,7 @@ function updateBackground(index) {
 //Update Border Colors
 function updateBorders(index) {
   $(".pilot-info").css("border-bottom", "1px solid " + pilotsArray[index].color);
-  $(".pilot-engage").on("hover", function() {
-    $(this).css("border-bottom", "1px solid " + pilotsArray[index].color);
-  });
+  $(".pilot-engage").css("border-bottom", "1px solid " + pilotsArray[index].color);
   $(".pilot-ship h1").css("border", "1px solid " + pilotsArray[index].color);
   $(".pilot-ship h2").css("border", "1px solid " + pilotsArray[index].color);
   $("canvas").css("border", "1px solid " + pilotsArray[index].color);
